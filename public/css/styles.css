@@ -10,6 +10,7 @@ body {
 
 .chat-container {
   width: 90%;
+  height: 90vh;
   max-width: 600px;
   background-color: #fff;
   border-radius: 10px;
@@ -31,6 +32,10 @@ body {
   padding: 15px;
   overflow-y: auto;
   background-color: #f9f9f9;
+}
+
+.chat-messages div{
+  display: flex;
 }
 
 .chat-input {
@@ -61,9 +66,14 @@ body {
 }
 
 .message {
+  width: max-content;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
+}
+
+.message p{
+  margin: 0;
 }
 
 .message.bot {
